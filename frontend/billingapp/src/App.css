@@ -1,0 +1,228 @@
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+.sidebar {
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  padding: 20px;
+}
+
+.sidebar-brand {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-link {
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sidebar-link.active,
+.sidebar-link:hover {
+  background: #e0e0e0;
+}
+
+.page-area {
+  flex: 1;
+}
+
+.topbar {
+  height: 60px;
+  background: #333;
+}
+
+.content {
+  padding: 20px;
+}
+
+.page-block {
+  max-width: 1000px;
+}
+
+.page-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.page-head h1 {
+  margin: 0;
+}
+
+.card-grid,
+.item-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ddd;
+}
+
+.card h3 {
+  margin: 0 0 10px;
+}
+
+.card p {
+  margin: 0;
+  color: #666;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-grid.billing-grid {
+  grid-template-columns: 1fr;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 14px;
+}
+
+input,
+select {
+  height: 35px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  height: 35px;
+  border: none;
+  cursor: pointer;
+  padding: 0 15px;
+}
+
+.btn-primary {
+  background: #007bff;
+  color: #fff;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: #dc3545;
+  border: 1px solid #dc3545;
+}
+
+.btn-add {
+  background: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  padding: 0 15px;
+}
+
+.form-card,
+.data-card,
+.bill-card {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  margin-bottom: 20px;
+}
+
+.checkbox-grid {
+  display: grid;
+  gap: 10px;
+}
+
+.checkbox-card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.checkbox-card input {
+  width: 16px;
+  height: 16px;
+}
+
+.badge {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.badge-success {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge-danger {
+  background: #f8d7da;
+  color: #721c24;
+}
+
+.bill-card {
+  margin-top: 20px;
+}
+
+.bill-card h2 {
+  margin-top: 0;
+}
+
+.bill-total {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.list-section {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .app-shell {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .card-grid,
+  .item-grid,
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
